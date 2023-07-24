@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* font */
+@import "reset.css";
+
+#box{
+    width: 100%;
+    padding: 180px 0 150px;
+}
+
+#box .inner{
+    width: 1180px;
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+#box .inner h1{
+    font: bold 22px/1 "arial";
+    color: #555;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #888;
+    padding-bottom: 20px;
+}
+
+#box .inner .wrap{
+    width: 100%;
+}
+
+#box .inner .wrap article{
+    float: left;
+    background-color: #777;
+}
+
+#box .inner .wrap article:nth-of-type(1){
+    width: 780px;
+    height: 300px;
+    margin-right: 20px;
+    padding: 30px;
+
+    position: relative;
+}
+
+#box .inner .wrap article:nth-of-type(1) h2{
+    font: bold 14px/1 "arial";
+    color: #111;
+    margin-bottom: 20px;
+}
+
+#box .inner .wrap article:nth-of-type(1) h3{
+    font: bold 30px/1.1 "arial";
+    color: #fff;
+}
+
+#box .inner .wrap article:nth-of-type(1) h4{
+    font: bold 30px/1.1 "arial";
+    color: #bbb;
+    margin-bottom: 40px;
+}
+
+#box .inner .wrap article:nth-of-type(1) a{
+    display: block;
+    /* a태그 버그가 가끔 존재한다. block 속성으로 변경하지 않아도 width 값과 height값이 설정된다. */
+    width: 180px;
+    height: 40px;
+    background-color: beige;
+    border-radius: 20px;
+    text-align: center;
+    font: 20px/40px "arial";
+    /* font를 상하 기준 중간으로 맞추려면 font-weight값과 height값을 동일하게 설정한다. */
+    color: #111;
+
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+}
+
+#box .inner .wrap article:nth-of-type(2),
+#box .inner .wrap article:nth-of-type(3){
+    width: 380px;
+    height: 140px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#box .inner .wrap article:nth-of-type(2) h2,
+#box .inner .wrap article:nth-of-type(3) h2{
+    font: bold 20px/1 "arial";
+    color: #fff;
+    margin-bottom: 10px;
+}
+#box .inner .wrap article:nth-of-type(2) h3,
+#box .inner .wrap article:nth-of-type(3) h3{
+    font-size: 14px;
+    color: #bbb;
+}
+
+
